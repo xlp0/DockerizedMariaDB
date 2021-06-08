@@ -1,4 +1,4 @@
-FROM mariadb
+FROM mariadb:10.6.1
 
 # Update the image to the latest software
 RUN apt-get update
