@@ -1,4 +1,4 @@
-FROM mariadb:10.6.1
+FROM mariadb:10.6.4
 
 # Update the image to the latest software
 RUN apt-get update
@@ -15,7 +15,4 @@ ADD crontab /var/spool/cron/crontab/root
 # Give execution rights on the cron job
 RUN chmod 0644 /var/spool/cron/crontab/root
 
-ADD backupRegularly.sh /home/backupRegularly.sh
-
-RUN chmod +x /home/backupRegularly.sh
-
+COPY ./debian.cnf /etc/mysql/debian.cnf

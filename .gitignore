@@ -3,3 +3,8 @@
 
 # Ada Library Information
 *.ali
+
+*.tar.gz
+
+.DS_Store
+.vscode/

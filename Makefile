@@ -1,3 +1,6 @@
+test: 
+	docker build -t xlp0/mariadb_auto .
+
 build: 
 	docker build -t xlp0/mariadb .
 
