@@ -1,14 +1,14 @@
 test: 
-	docker build -t xlp0/mariadb_auto .
+	docker buildx build -t xlp0/mariadb_auto .
 
 build: 
-	docker build -t xlp0/mariadb .
+	docker buildx build -t xlp0/mariadb .
 
 push:
 	docker push xlp0/mariadb
 
 buildTest:
-	docker build -t xlp0/mariadbtest .
+	docker buildx build -t xlp0/mariadbtest .
 
 pushTest:
 	docker push xlp0/mariadbtest
